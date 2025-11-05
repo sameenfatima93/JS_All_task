@@ -1,0 +1,109 @@
+.mynav {
+    background: #74d1fc73;
+    background: linear-gradient(90deg, rgb(184, 128, 128) 0%, rgb(231, 211, 211) 50%, rgb(92, 117, 138) 100%);
+    color: rgb(221, 227, 231);
+}
+
+.user-info {
+    position: absolute;
+    top: 34px;
+    /* left: 20px; */
+    right: 79px !important;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #0c0c0c;
+    font-size: large;
+    font-weight: bolder;
+
+
+}
+
+.profile-pic {
+    position: relative;
+    left: 220px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post-header {
+    background: #74d1fc73;
+    background: linear-gradient(90deg, rgb(184, 128, 128) 0%, rgb(231, 211, 211) 50%, rgb(92, 117, 138) 100%);
+    color: rgb(221, 227, 231);
+}
+
+.mycrd {
+    background: #74d1fc73;
+    background: linear-gradient(90deg, rgb(184, 128, 128) 0%, rgb(231, 211, 211) 50%, rgb(92, 117, 138) 100%);
+    color: rgb(221, 227, 231);
+}
+
+.inp-focus {
+    border: 4px solid #6c6262 !important;
+    /* apni marzi ka color */
+    border-radius: 8px;
+    /* thoda round karna ho */
+    box-shadow: none !important;
+}
+
+.inp-focus:focus {
+    border-color: #fbfbfb;
+    /* focus pe blue color */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+    /* background: transparent; */
+
+}
+
+.mybtn:hover {
+    background-color: transparent !important;
+    border: 2px solid white !important;
+}
+
+.mybtn {
+    font-size: 20px;
+    width: 100px;
+    height: 45px;
+    /* padding-top: -30px !important; */
+    /* margin-top: -30px; */
+    /* text-align: center; */
+}
+
+.bgImg {
+    width: 50px;
+    height: 50px;
+}
+
+.bgImg:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.selectedImg {
+    border: 2px solid #263238;
+    border-radius: 5px;
+}
+
+#imageBox img:active{
+    border: 3px solid royalblue;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px royalblue;
+
+}
+
+/* .bgImg {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid transparent;
+} */
+
+.selectedImg {
+  border: 3px solid royalblue;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px royalblue;
+}
