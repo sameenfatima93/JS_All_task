@@ -62,7 +62,7 @@ function post() {
         `,
         showCancelButton: true,
         confirmButtonText: "Save",
-        background: "#f8f9fa",
+        background: "url(&{'backgroundImg'})",
         preConfirm: () => {
           const newTitle = document.getElementById("edit-title").value.trim();
           const newDesc = document.getElementById("edit-desc").value.trim();
@@ -93,26 +93,15 @@ function post() {
 }
 
 ////_______image selection pr active styling
-function selectImage() {
-  const imageBox = document.getElementById('imageBox');
-  const images = imageBox.querySelectorAll('img');
+// var cardImg;
+// function selectImg(src) {
+// cardImg = src
+//   var bgImg = document.getElementsByClassName("bgImg")
+//   for (let i = 0; i < bgImg.length; i++) {
+//   }
 
-  images.forEach((img) => {
-    img.addEventListener('click', function () {
-      // sab se 'active' class remove karo
-      images.forEach((i) => i.classList.remove('active'));
-
-      // sirf clicked image par 'active' lagao
-      this.classList.add('active');
-
-      // optional: selected image ka path lena ho to:
-      const selectedSrc = this.src;
-      console.log("Selected image:", selectedSrc);
-    });
-  });
-}
-
-selectImage(); // function ko call karna mat bhoolna
+//   event.target.classList.add("selectedImg")
+// }
 
 
 
@@ -169,22 +158,16 @@ document.addEventListener("DOMContentLoaded", () => {
 //   event.target.className += " selectedImg";
 // }
 
-let backgroundImg = "";
-
-function selectImg(src, event) {
-  backgroundImg = src; // selected image path
+//______image pr active effect lagana hy jb woh select ho to border lgy us pr____
+var backgroundImg;
+function selectImg(src) {
+  backgroundImg = src;
   const bgImgs = document.getElementsByClassName("bgImg");
-
-  // sab images se "selectedImg" class remove karo
   for (let i = 0; i < bgImgs.length; i++) {
-    bgImgs[i].classList.remove("selectedImg");
-  }
+    bgImgs[i].className = "bgImg"
 
-  // sirf clicked image par lagao
+  }
   event.target.classList.add("selectedImg");
 
-  // optional: save selected background for later use
-  localStorage.setItem("selectedBackground", backgroundImg);
-
-  console.log("Selected background:", backgroundImg);
 }
+
